@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*MOBILE FIRST*/
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+#travel {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    color: #fff;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "content"
+    "section"
+    "footer";
+}
+
+/*HEADER*/
+.travel__nav {
+    margin-bottom: 10px;
+}
+
+nav {
+    grid-area: nav;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+}
+
+
+.nav__link { 
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.6s;
+}
+
+.nav__link:hover {
+    background-color: white;
+    color: #46aef7;
+}
+
+.nav__logo {
+    font-size: 1.8rem;
+    font-weight: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+
+.nav__icon {
+    width: 30px;
+}
+
+
+/*hr {
+    margin-top: 20px;
+    border: 1px solid #eaeaea
+}*/
+
+
+
+.travel__main {
+    grid-area: content;
+    display: grid;
+    gap: 2em;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .travel__main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, max-content);
+        text-align: start;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
+
+.travel__title {
+    font-size: 2.6rem;
+    margin-top: 20px;
+}
+
+.travel__subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+.travel__link__contact {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    padding: 15px 30px;
+    border: 1px solid;
+    display:inline-block;
+    font-weight: 700;
+    transition: background-color .5s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.travel__link__contact:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #46aef7;
+}
+
+.travel__waves {
+    grid-area: content;
+    align-self: end;
+}
+
+.travel__img {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+
+    .travel__foto { 
+        align-self: center;
+    }
+
+    .travel__link__contact {
+        margin: 0px;
+    }
+}
+
+
+/*BANNERS*/
+
+.travel__section {
+    background-color: #fff;
+    grid-area: section;
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+    gap: 15px;
+}
+
+.card__travel {
+    background-color: #46aef7;
+    color: #fff;
+    padding: 20px;
+    margin: 0px 10px 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: scale .3s;
+}
+
+.card__travel:hover {
+    scale: 1.1;
+}
+
+
+
+.banner__icon {
+    filter: invert(100%);
+    width: 40px;
+}
+
+.banner__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.banner__descripcion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width:600px) {
+    .travel__section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        justify-content: end;
+    }
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+
+}
+
+.travel__footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/*NOSOTROS*/
+
+#travel__nosotros {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    color: #fff;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "section"
+    "footer";
+}
+
+.nosotros__main {
+    grid-area: main;
+}
+
+.nosotros__info {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nosotros__card {
+    margin: 20px;
+    background-color: #fff;
+    color: black;
+}
+
+.li_img {
+    padding: 5px;
+}
+
+.li_text {
+    padding: 10px;
+}
+
+.img-stock {
+    height: 160px;
+    width: 280px;
+    max-width: 100%;
+    border: black 1px solid;
+}
+
+.li_h4 {
+    margin-bottom: 10px;
+}
+
+.li_p {
+    letter-spacing: 1px;
+}
