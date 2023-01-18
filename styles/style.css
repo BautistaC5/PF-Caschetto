@@ -251,10 +251,12 @@ footer {
 .nosotros__info {
     display: flex;
     flex-direction: column;
-    list-style: none;
 }
 
 .nosotros__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
     background-color: #fff;
     color: black;
