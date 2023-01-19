@@ -38,33 +38,33 @@ body {
     margin-bottom: 10px;
 }
 
-nav {
+.navbar {
     grid-area: nav;
     padding: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-bottom: 10px;
+    background:none!important;
 }
-
+/* 
 .nav__list {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: .5rem;
+} */
+
+.navbar-brand {
+    color: white!important;
 }
 
-
-.nav__link { 
-    color: #fff;
+.nav-link { 
+    color: rgb(255, 255, 255)!important;
     text-decoration: none;
     padding: 8px;
-    transition: background-color 0.6s;
 }
 
-.nav__link:hover {
-    background-color: white;
-    color: #46aef7;
+.nav-link:hover {
+    color: #000000!important;
 }
 
 .nav__logo {
@@ -250,41 +250,35 @@ footer {
     grid-area: section;
 }
 
-.nosotros__info {
+
+/* .nosotros__info {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-}
+} */
 
 .nosotros__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
     background-color: #fff;
     color: black;
-}
-
-.li_img {
     padding: 5px;
-}
 
-.li_text {
-    padding: 10px;
 }
 
 .img-stock {
-    height: 160px;
+    height: 180px;
     width: 280px;
     max-width: 100%;
-    border: black 1px solid;
 }
+
+.li_text {
+    padding: 5px;
+}
+
 
 .li_h4 {
     margin-bottom: 10px;
-}
-
-.li_p {
-    letter-spacing: 1px;
 }
 
 @media screen and (min-width:768px) {
