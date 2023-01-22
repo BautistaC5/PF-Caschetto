@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LINK BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Bonvoyage viajes</title>
+</head>
+
+<body id="travel__animate">
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end">
+            <div class="navbar-div container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <h2 class="nav__logo">Bonvoyage</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="animate.html">Animate</a>
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="faq.html">FAQs</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="animacion__animate">
+        <hr class="animacion__hr animate__animated animate__fadeInLeft">
+        <div class="container animacion__div animate__animated animate__bounceInLeft">
+            <h1 class="animacion__h1">Preparate para <strong>volar</strong></h1>
+            <img src="../img/avion.svg" alt="Avion SVG" class="animacion__img">
+        </div>
+        <hr class="animacion__hr animate__animated animate__fadeInRight">
+    </section>
+
+    <section class="section__destino">
+        <h2 class="titulo__destino">Elegí tu destino</h2>
+        <hr class="lugar__hr">
+
+        <div class="destino container">
+                <div class="card__destino" style="width: 18rem;">
+                    <img src="../img/galeria/8.jpg" class="card-img-top card__img" alt="...">
+                    <div class="card__body">
+                        <h5 class="card__title">Cuba</h5>
+                        <p class="card__text">Disfrutá de uno de los países más hermosos del Caribe</p>
+                        <a href="" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+
+                <div class="card__destino" style="width: 18rem;">
+                    <img src="../img/galeria/2.jpg" class="card-img-top card__img" alt="...">
+                    <div class="card__body">
+                        <h5 class="card__title">Nueva York</h5>
+                        <p class="card__text">Recorré lugares icónicos como la gran manzana!</p>
+                        <a href="" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+
+                <div class="card__destino" style="width: 18rem;">
+                    <img src="../img/galeria/7.jpg" class="card-img-top card__img" alt="...">
+                    <div class="card__body">
+                        <h5 class="card__title">China</h5>
+                        <p class="card__text">Un país con una historia única y con mucho por descubrir</p>
+                        <a href="" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+
+                <div class="card__destino" style="width: 18rem;">
+                    <img src="../img/galeria/9.jpg" class="card-img-top card__img" alt="...">
+                    <div class="card__body">
+                        <h5 class="card__title">Grecia</h5>
+                        <p class="card__text">Visitá la cuna de la civilización occidental</p>
+                        <a href="" class="btn btn-primary">Elegir</a>
+                    </div>
+                </div>
+        </div>
+
+
+        <h2 class="titulo__destino">Elegí tu plan</h2>
+        <hr class="lugar__hr">
+        
+    </section>
+
+    <footer class="d-flex justify-content-center fixed">
+        <p class="footer__p">
+            Todos los derechos reservados &copy;
+        </p>
+    </footer>
+
+
+
+<!-- JAVASCRIPT DEL BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<!-- JS DE WOW -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>

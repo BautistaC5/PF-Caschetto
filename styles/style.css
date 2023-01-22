@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
 }
 
 /*MOBILE FIRST*/
@@ -196,17 +197,104 @@ body {
 
 footer {
     grid-area: footer;
-    color: white;
-    margin-top: 10px!important;
-    padding-top: 10px!important;
+    color: #fff;
     background-color: #46aef7;
 }
+
+.footer__p {
+    padding-top: 20px;
+}
+
+/*ANIMATE*/
+
+.travel__animate {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "section"
+    "main"
+    "footer"
+}
+
+.animacion__animate {
+    grid-area: section;
+    background-color: #46aef7;
+}
+
+.animacion__hr {
+    border: #2273ad 10px solid;
+}
+
+.animacion__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.animacion__h1 {
+    color: white;
+
+}
+
+.animacion__img {
+    justify-self: end;
+    height: 100px;
+    width: 100px;
+    filter: invert(100%);
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.section__destino {
+    grid-area: main;
+}
+
+.destino {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.titulo__destino {
+    text-align: center;
+}
+
+.card__destino {
+    background-color: #2273ad;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card__title {
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #2273ad;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #46aef7;
+}
+
+.card__img {
+    border-radius: 5px;
+}
+
 
 
 /*NOSOTROS*/
 
 #travel__nosotros {
-    background-color: #fff;
     color: #46aef7;
     display: grid;
     grid-template-rows: max-content 1fr;
@@ -247,6 +335,7 @@ footer {
     "section"
     "footer";
 }
+
 
 .faq__section {
     grid-area: section;
