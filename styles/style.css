@@ -63,6 +63,19 @@ body {
     filter:invert(100%);
 }
 
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width:992px) {
+    .navbar-collapse {
+        justify-content: end;
+        margin-right: 10rem;
+    }
+}
+
 .nav__logo {
     font-size: 1.8rem;
     font-weight: 200px;
@@ -213,7 +226,6 @@ footer {
     grid-template-areas:
     "nav"
     "section"
-    "main"
     "footer"
 }
 
@@ -246,25 +258,19 @@ footer {
     filter: invert(100%);
     display: inline-block;
     margin: 0 0.5rem;
+    animation: bounceInLeft;
+    animation-duration: 2s;
 }
 
 .section__destino {
     grid-area: main;
 }
 
-.destino {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-
-.titulo__destino {
+.animate__titulo {
     text-align: center;
 }
 
-.card__destino {
+.card__destino, .card__plan {
     background-color: #2273ad;
     color: #fff;
     border-radius: 5px;
@@ -290,6 +296,13 @@ footer {
     border-radius: 5px;
 }
 
+.card__plan {
+    width: 70%;
+}
+
+.card__svg {
+    width: 100px;
+}
 
 
 /*NOSOTROS*/
@@ -341,3 +354,53 @@ footer {
     grid-area: section;
 }
 
+/*CONTACTO*/
+
+#travel__contacto {
+    color: #46aef7;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "nav"
+    "section"
+    "footer";
+    
+}
+
+.travel__contacto {
+    grid-area: section;
+}
+
+
+.contacto {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__svg {
+    justify-self: center;
+    width: 40%;
+}
+
+@media screen and (min-width:576px) {
+    .contacto {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: none;
+    }
+
+    .contacto__svg {
+        width: 80%;
+    }
+}
+
+.contacto__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #46aef7;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    gap: 10px;
+}
