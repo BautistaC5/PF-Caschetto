@@ -63,12 +63,6 @@ body {
     filter:invert(100%);
 }
 
-.navbar-collapse {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 @media screen and (min-width:992px) {
     .navbar-collapse {
         justify-content: end;
