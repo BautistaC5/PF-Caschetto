@@ -69,8 +69,8 @@
     gap: 15px;
 
     .card__travel {
-        background-color: #46aef7;
-        color: #fff;
+        background-color: nth($color, 1);
+        color: nth($color, 2 );
         padding: 20px;
         margin: 0px 10px 20px 10px;
         border-radius: 10px;

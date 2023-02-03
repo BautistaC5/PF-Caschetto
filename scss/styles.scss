@@ -1,16 +1,11 @@
-@import 'variables';
-@import 'header';
-@import 'footer';
-@import 'index';
+@import 'utilities/variables';
+@import 'base/reset';
+@import 'base/typos';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'views/index';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: $font;
 
     .container {
         width: 80%;
@@ -30,5 +25,5 @@ body {
         "section"
         "footer";
     }
-}
+
 
