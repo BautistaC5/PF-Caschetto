@@ -51,6 +51,21 @@ footer .footer__p {
   padding-top: 20px;
 }
 
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#travel {
+  background-color: #fff;
+  color: #46aef7;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas: "nav" "content" "section" "footer";
+}
+
 .travel__main {
   grid-area: content;
   display: grid;
@@ -141,19 +156,60 @@ footer .footer__p {
     grid-template-rows: none;
   }
 }
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
+.animacion__animate {
+  grid-area: section;
+  background-color: #46aef7;
+  margin-bottom: 20px;
+}
+.animacion__animate .animacion__hr {
+  border: #2273ad 10px solid;
+}
+.animacion__animate .animacion__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.animacion__animate .animacion__div .animacion__h1 {
+  color: white;
+}
+.animacion__animate .animacion__div .animacion__img {
+  justify-self: end;
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounceInLeft;
+  animation-duration: 2s;
 }
 
-#travel {
+.section__animate {
+  grid-area: main;
+}
+.section__animate .animate__titulo {
+  text-align: center;
+}
+.section__animate .destino .card__destino, .section__animate .destino .card__plan {
+  background-color: #2273ad;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.section__animate .destino .card__destino .card__img, .section__animate .destino .card__plan .card__img {
+  border-radius: 5px;
+}
+.section__animate .destino .card__destino .card__body .card__title, .section__animate .destino .card__plan .card__body .card__title {
+  margin-top: 10px;
+}
+.section__animate .destino .card__destino .card__body .btn, .section__animate .destino .card__plan .card__body .btn {
   background-color: #fff;
-  color: #46aef7;
-  display: grid;
-  grid-template-rows: max-content 1fr;
-  grid-template-areas: "nav" "content" "section" "footer";
+  color: #2273ad;
+  border: none;
+}
+.section__animate .destino .card__destino .card__body .btn:hover, .section__animate .destino .card__plan .card__body .btn:hover {
+  background-color: #46aef7;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,27 +3,10 @@
 @import 'base/typos';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/grid';
 @import 'views/index';
+@import 'views/animate';
 
 
-
-    .container {
-        width: 80%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    #travel {
-        background-color: nth($color, 2);
-        color: nth($color, 1);
-        display: grid;
-        grid-template-rows: max-content 1fr;
-        grid-template-areas:
-        "nav"
-        "content"
-        "section"
-        "footer";
-    }
 
 
