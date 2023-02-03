@@ -1,0 +1,9 @@
+footer {
+    grid-area: footer;
+    color: nth($color, 2);
+    background-color: nth($color, 1);
+
+    .footer__p {
+        padding-top: 20px;
+    }
+}

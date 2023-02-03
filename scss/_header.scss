@@ -1,0 +1,39 @@
+.navbar {
+    grid-area: nav;
+    padding: 5px;
+    margin-bottom: 40px;
+    color: nth($color, 2)!important;
+    background-color: nth($color, 1)!important;
+    
+    .navbar-brand {
+        color: nth($color, 2)!important;
+    }
+
+    .navbar-toggler-icon {
+        filter:invert(100%);
+    }
+
+    .nav-link {
+        color: nth($color, 2)!important;
+        text-decoration: none;
+        padding: 8px;
+
+        &:hover {
+            color: nth($color, 4)!important;
+        }
+    }
+
+    .nav__logo {
+        font-size: 1.8rem;
+        font-weight: 200px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    @media screen and (min-width:992px) {
+        .navbar-collapse {
+            justify-content: end;
+            margin-right: 10rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "agencia-de-turismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BautistaC5/agencia-de-viajes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BautistaC5/agencia-de-viajes/issues"
+  },
+  "homepage": "https://github.com/BautistaC5/agencia-de-viajes#readme"
+}
