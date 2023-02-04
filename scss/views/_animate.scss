@@ -41,11 +41,7 @@
 
     .destino {
         .card__destino {
-            background-color: nth($color, 3);
-            color: nth($color, 2);
-            border-radius: 5px;
-            padding: 10px;
-            text-align: center;
+            @extend %cards__animate;
 
             .card__img {
                 border-radius: 5px;
@@ -57,52 +53,27 @@
             }
             
             .btn {
-                background-color: nth($color, 2);
-                color: nth($color, 3);
-                border: none;
-
-                &:hover {
-                    background-color: nth($color, 1);
-                }
+                @extend %button;
             }
         }
         }
     }
+
+    .plan {
+        .card__svg {
+            width: 100px;
+        }
+
+        .card__plan {
+            @extend %cards__animate;
+        }
+
+        .btn {
+            @extend %button;
+        }
+    }
 }
 
-
-.card__plan {
-
-    @extend .card__destino;
-    // background-color: nth($color, 3);
-    // color: nth($color, 2);
-    // border-radius: 5px;
-    // padding: 10px;
-    // text-align: center;
-    // width: 70%;
-
-//     .card__svg {
-//         width: 100px;
-//     }
-
-
-//     .card__body {
-//         .card__title {
-//             margin-top: 10px;
-//         }
-
-    
-//     .btn {
-//         background-color: nth($color, 2);
-//         color: nth($color, 3);
-//         border: none;
-
-//         &:hover {
-//             background-color: nth($color, 1);
-//         }
-//     }
-// }
-}
 
 
 

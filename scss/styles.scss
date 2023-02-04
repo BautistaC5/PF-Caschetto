@@ -1,12 +1,16 @@
+/*UTILITIES*/
 @import 'utilities/variables';
+@import 'utilities/extends';
+/*BASE*/
 @import 'base/reset';
-@import 'base/typos';
+/*LAYOUTS*/
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/grid';
+/*VIEWS*/
 @import 'views/index';
 @import 'views/animate';
-
+@import 'views/nosotros';
+@import 'views/contacto';
 
 
 

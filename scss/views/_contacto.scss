@@ -1,0 +1,32 @@
+.contacto {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+
+    .contacto__svg {
+    justify-self: center;
+    width: 40%;
+    }
+
+    .contacto__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #46aef7;
+        color: #fff;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .contacto {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: none;
+    }
+
+    .contacto__svg {
+        width: 80%;
+    }
+}
