@@ -2,11 +2,11 @@
     grid-area: nav;
     padding: 5px;
     margin-bottom: 40px;
-    color: nth($color, 2)!important;
-    background-color: nth($color, 1)!important;
+    color: nth($color, 2);
+    background-color: nth($color, 1);
     
     .navbar-brand {
-        color: nth($color, 2)!important;
+        color: nth($color, 2);
     }
 
     .navbar-toggler-icon {
@@ -14,12 +14,12 @@
     }
 
     .nav-link {
-        color: nth($color, 2)!important;
+        color: nth($color, 2);
         text-decoration: none;
         padding: 8px;
 
         &:hover {
-            color: nth($color, 4)!important;
+            color: nth($color, 4);
         }
     }
 
@@ -30,7 +30,7 @@
         margin: 15px;
     }
 
-    @media screen and (min-width:992px) {
+    @media screen and (min-width:$desktop) {
         .navbar-collapse {
             justify-content: end;
             margin-right: 10rem;

@@ -1,27 +1,30 @@
+@charset "UTF-8";
 /*UTILITIES*/
-.section__animate .plan .card__plan, .section__animate .destino .card__destino {
-  background-color: #2273ad;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-}
-
-.section__animate .plan .btn, .section__animate .destino .card__destino .card__body .btn {
+/*TAMAÑOS DE PANTALLA*/
+/*MIXINS*/
+/*EXTENDS*/
+.section__animate .plan .card__plan .card__body .btn__p {
   background-color: #fff;
   color: #2273ad;
   border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
-.section__animate .plan .btn:hover, .section__animate .destino .card__destino .card__body .btn:hover {
+.section__animate .plan .card__plan .card__body .btn__p:hover {
   background-color: #46aef7;
 }
 
+/*MIXINS*/
 /*BASE*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Josefin Sans", sans-serif;
+  background-color: #fff;
 }
 
 .container {
@@ -36,22 +39,22 @@
   grid-area: nav;
   padding: 5px;
   margin-bottom: 40px;
-  color: #fff !important;
-  background-color: #46aef7 !important;
+  color: #fff;
+  background-color: #46aef7;
 }
 .navbar .navbar-brand {
-  color: #fff !important;
+  color: #fff;
 }
 .navbar .navbar-toggler-icon {
   filter: invert(100%);
 }
 .navbar .nav-link {
-  color: #fff !important;
+  color: #fff;
   text-decoration: none;
   padding: 8px;
 }
 .navbar .nav-link:hover {
-  color: #000000 !important;
+  color: #000000;
 }
 .navbar .nav__logo {
   font-size: 1.8rem;
@@ -73,9 +76,7 @@ footer {
 }
 footer .footer__p {
   padding-top: 20px;
-}
-
-/*VIEWS*/
+} /*VIEWS*/
 #travel {
   background-color: #fff;
   color: #46aef7;
@@ -206,13 +207,37 @@ footer .footer__p {
 .section__animate .animate__titulo {
   text-align: center;
 }
+.section__animate .destino .card__destino {
+  background-color: #2273ad;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
 .section__animate .destino .card__destino .card__img {
   border-radius: 5px;
 }
 .section__animate .destino .card__destino .card__body .card__title {
   margin-top: 10px;
 }
-.section__animate .plan .card__svg {
+.section__animate .destino .card__destino .card__body .btn__destino {
+  background-color: #fff;
+  color: #2273ad;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.section__animate .destino .card__destino .card__body .btn__destino:hover {
+  background-color: #46aef7;
+}
+.section__animate .plan .card__plan {
+  background-color: #2273ad;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.section__animate .plan .card__plan .card__svg {
   width: 100px;
 }
 .nosotros__section {

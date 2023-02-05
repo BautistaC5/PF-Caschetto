@@ -4,3 +4,37 @@ $color:
 #fff,
 #2273ad,
 #000000;
+
+/*TAMAÑOS DE PANTALLA*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*MIXINS*/
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*EXTENDS*/
+%btn__destino {
+    background-color: nth($color, 2);
+    color: nth($color, 3);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:hover {
+        background-color: nth($color, 1);
+    }
+}
+
+/*MIXINS*/
+@mixin card-style {
+    background-color: nth($color, 3);
+    color: nth($color, 2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}

@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: $font;
+    background-color: nth($color, 2);
 }
 
 .container {
@@ -11,3 +15,4 @@
     margin: 0 auto;
     overflow: hidden;
 }
+

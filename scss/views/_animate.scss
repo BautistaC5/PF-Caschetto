@@ -41,7 +41,7 @@
 
     .destino {
         .card__destino {
-            @extend %cards__animate;
+            @include card-style;
 
             .card__img {
                 border-radius: 5px;
@@ -52,24 +52,35 @@
                 margin-top: 10px;
             }
             
-            .btn {
-                @extend %button;
+            .btn__destino {
+                    background-color: nth($color, 2);
+                    color: nth($color, 3);
+                    border: none;
+                    border-radius: 5px;
+                    padding: 5px;
+                
+                    &:hover {
+                        background-color: nth($color, 1);
+                    }
             }
         }
         }
     }
 
     .plan {
-        .card__svg {
-            width: 100px;
-        }
-
         .card__plan {
-            @extend %cards__animate;
-        }
+            @include card-style;
 
-        .btn {
-            @extend %button;
+            
+            .card__svg {
+                width: 100px;
+            }
+
+            .card__body {
+                .btn__p {
+                    @extend %btn__destino;
+                }
+            }
         }
     }
 }

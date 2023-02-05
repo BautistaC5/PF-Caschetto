@@ -12,8 +12,8 @@
     .contacto__form {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #46aef7;
-        color: #fff;
+        background-color: nth($color, 1);
+        color: nth($color, 2);
         padding: 2rem;
         margin-bottom: 3rem;
         gap: 10px;
